@@ -10,9 +10,9 @@ class player : public actor
 {
 	public:
 
-	// Properites
-	virtual char getDisplay(cell& holder);
+	player();
 
+	// Properites
 	size_t& getAP();
 
 	// Inventory
@@ -29,6 +29,8 @@ class player : public actor
 
 
 	protected:
+
+	virtual void initView();
 
 	size_t ap, max_ap;
 

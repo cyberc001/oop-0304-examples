@@ -1,5 +1,6 @@
 #include "item.h"
 
+#include "../cell_object_view.h"
 #include "player.h"
 
 // events
@@ -16,7 +17,7 @@ void item::onWalkedIn(actor& by_who)
 
 // properties
 
-char item::getDisplay(cell& holder) { return '+'; }
+void item::initView() { vw = new cell_object_view('+', *this); }
 
 size_t item::getAmount() const { return amount; }
 void item::setAmount(size_t amount)

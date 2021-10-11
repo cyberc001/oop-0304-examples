@@ -1,10 +1,16 @@
 #include "player.h"
 
+#include "../cell_object_view.h"
 #include "../cells/cell_exit.h"
+
+player::player()
+{
+	initView();
+}
 
 // Properties
 
-char player::getDisplay(cell& holder) { return '@'; }
+void player::initView() { vw = new cell_object_view('@', *this); }
 
 size_t& player::getAP() { return ap; }
 

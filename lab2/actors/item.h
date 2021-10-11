@@ -12,7 +12,6 @@ class item : public actor
 	virtual void onUsed(actor& p) = 0;
 
 	// properties
-	char getDisplay(cell& holder);
 
 	size_t getAmount() const;
 	void setAmount(size_t amount);
@@ -24,6 +23,8 @@ class item : public actor
 
 
 	protected:
+
+	void initView();
 
 	actor* owner;
 	size_t amount;

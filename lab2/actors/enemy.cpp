@@ -1,10 +1,12 @@
 #include "enemy.h"
 
+#include "../cell_object_view.h"
+
 #include <iostream>
 
 // Properties
 
-char enemy::getDisplay(cell& holder) { return '%'; }
+void enemy::initView() { vw = new cell_object_view('&', *this); }
 
 size_t& enemy::getAP() { return ap; }
 

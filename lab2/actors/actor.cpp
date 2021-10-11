@@ -4,10 +4,10 @@ size_t actor::getHealth() { return health; }
 void actor::setHealth(size_t hp) { health = hp; }
 size_t actor::getMaxHealth() { return max_health; }
 void actor::setMaxHealth(size_t max_hp) { max_health = max_hp; }
-size_t actor::getDamageThreshold() { return dt; }
-void actor::setDamageThreshold(size_t dt) { this->dt = dt; }
-double actor::getDamageResistance() { return dr; }
-void actor::setDamageResistance(double dr) { this->dr = dr; }
+size_t actor::getDamageThreshold() { return dmg_thres; }
+void actor::setDamageThreshold(size_t dmg_thres) { this->dmg_thres = dmg_thres; }
+double actor::getDamageResistance() { return dmg_res; }
+void actor::setDamageResistance(double dmg_res) { this->dmg_res = dmg_res; }
 
 unsigned int actor::getTeamID() { return team_id; }
 void actor::setTeamID(unsigned int tid) { this->team_id = tid; }

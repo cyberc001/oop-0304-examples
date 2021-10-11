@@ -1,7 +1,7 @@
 GCPP = g++ -std=c++17 -g
 
 
-lab2: main.cpp field.o field_view.o cell.o cell_view.o cell_entrance.o cell_exit.o cell_object.o actor.o enemy.o item.o player.o armor_item.o health_item.o weapon_item.o acolyte.o sentinel.o stalkerbot.o action_combat.o action_move.o action_shoot_ballistic.o
+lab2: main.cpp field.o field_view.o cell.o cell_view.o cell_entrance.o cell_exit.o cell_object.o cell_object_view.o actor.o enemy.o item.o player.o armor_item.o health_item.o weapon_item.o acolyte.o sentinel.o stalkerbot.o action_combat.o action_move.o action_shoot_ballistic.o
 	$(GCPP) $^ -o lab2
 clean:
 	-rm -f *.o
@@ -20,6 +20,8 @@ cell_entrance.o: cells/cell_entrance.cpp cells/cell_entrance.h
 cell_exit.o: cells/cell_exit.cpp cells/cell_exit.h
 	$(GCPP) -c $< -o $@
 cell_object.o: cell_object.cpp cell_object.h
+	$(GCPP) -c $< -o $@
+cell_object_view.o: cell_object_view.cpp cell_object_view.h
 	$(GCPP) -c $< -o $@
 
 actor.o: actors/actor.cpp actors/actor.h

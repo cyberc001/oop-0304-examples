@@ -2,6 +2,8 @@
 
 stalkerbot::stalkerbot()
 {
+	initView();
+
 	max_ap = 6;
 	detection_dist = 20;
 

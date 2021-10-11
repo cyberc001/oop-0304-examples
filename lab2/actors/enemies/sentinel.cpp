@@ -2,6 +2,8 @@
 
 sentinel::sentinel()
 {
+	initView();
+
 	max_ap = 9;
 	detection_dist = 25;
 

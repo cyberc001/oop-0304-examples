@@ -11,6 +11,7 @@ class cell_view
 
 	char get_disp_char() const;
 
+
 	private:
 
 	char disp_char;

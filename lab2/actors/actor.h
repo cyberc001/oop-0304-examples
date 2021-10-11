@@ -14,9 +14,9 @@ class actor : public cell_object
 	virtual size_t getMaxHealth();
 	virtual void setMaxHealth(size_t max_hp);
 	virtual size_t getDamageThreshold();
-	virtual void setDamageThreshold(size_t dt);
+	virtual void setDamageThreshold(size_t dmg_thres);
 	virtual double getDamageResistance();
-	virtual void setDamageResistance(double dr);
+	virtual void setDamageResistance(double dmg_res);
 
 	virtual unsigned int getTeamID();
 	virtual void setTeamID(unsigned int tid);
@@ -37,8 +37,8 @@ class actor : public cell_object
 	private:
 
 	size_t health, max_health;
-	size_t dt;
-	double dr;
+	size_t dmg_thres;
+	double dmg_res;
 
 	unsigned int team_id;
 };

@@ -12,7 +12,6 @@ class enemy : public actor
 	public:
 
 	// Properties
-	virtual char getDisplay(cell& holder);
 	size_t& getAP();
 
 	// Events
@@ -25,6 +24,8 @@ class enemy : public actor
 	virtual void onWalkOn(cell& to_where);
 
 	protected:
+
+	virtual void initView();
 
 	size_t ap, max_ap;
 

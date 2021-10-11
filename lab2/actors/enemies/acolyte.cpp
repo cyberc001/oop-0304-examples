@@ -2,6 +2,8 @@
 
 acolyte::acolyte()
 {
+	initView();
+
 	max_ap = 8;
 	detection_dist = 15;
 
