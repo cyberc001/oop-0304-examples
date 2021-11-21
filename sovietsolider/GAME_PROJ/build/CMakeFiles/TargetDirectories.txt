@@ -1,0 +1,3 @@
+/home/greenjoker/GAME_PROJ/build/CMakeFiles/rebuild_cache.dir
+/home/greenjoker/GAME_PROJ/build/CMakeFiles/edit_cache.dir
+/home/greenjoker/GAME_PROJ/build/CMakeFiles/GAME_PROJ.dir
