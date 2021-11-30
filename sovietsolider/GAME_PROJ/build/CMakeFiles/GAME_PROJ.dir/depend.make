@@ -133,15 +133,24 @@ CMakeFiles/GAME_PROJ.dir/sources/main.cpp.o: ../headers/enemy.h
 CMakeFiles/GAME_PROJ.dir/sources/main.cpp.o: ../headers/enemyBoss.h
 CMakeFiles/GAME_PROJ.dir/sources/main.cpp.o: ../headers/enemyMove.h
 CMakeFiles/GAME_PROJ.dir/sources/main.cpp.o: ../headers/enemyStand.h
+CMakeFiles/GAME_PROJ.dir/sources/main.cpp.o: ../headers/exitCond.h
 CMakeFiles/GAME_PROJ.dir/sources/main.cpp.o: ../headers/field.h
 CMakeFiles/GAME_PROJ.dir/sources/main.cpp.o: ../headers/field_view.h
+CMakeFiles/GAME_PROJ.dir/sources/main.cpp.o: ../headers/fstreamWrapper.h
 CMakeFiles/GAME_PROJ.dir/sources/main.cpp.o: ../headers/game.h
+CMakeFiles/GAME_PROJ.dir/sources/main.cpp.o: ../headers/gameCond.h
+CMakeFiles/GAME_PROJ.dir/sources/main.cpp.o: ../headers/logger.h
 CMakeFiles/GAME_PROJ.dir/sources/main.cpp.o: ../headers/object.h
 CMakeFiles/GAME_PROJ.dir/sources/main.cpp.o: ../headers/objectDamage.h
 CMakeFiles/GAME_PROJ.dir/sources/main.cpp.o: ../headers/objectHeal.h
 CMakeFiles/GAME_PROJ.dir/sources/main.cpp.o: ../headers/objectRange.h
+CMakeFiles/GAME_PROJ.dir/sources/main.cpp.o: ../headers/ostreamWrapper.h
 CMakeFiles/GAME_PROJ.dir/sources/main.cpp.o: ../headers/player.h
+CMakeFiles/GAME_PROJ.dir/sources/main.cpp.o: ../headers/playerDeathCond.h
+CMakeFiles/GAME_PROJ.dir/sources/main.cpp.o: ../sources/exitCond.cpp
+CMakeFiles/GAME_PROJ.dir/sources/main.cpp.o: ../sources/game.cpp
 CMakeFiles/GAME_PROJ.dir/sources/main.cpp.o: ../sources/main.cpp
+CMakeFiles/GAME_PROJ.dir/sources/main.cpp.o: ../sources/playerDeathCond.cpp
 
 CMakeFiles/GAME_PROJ.dir/sources/objectDamage.cpp.o: ../headers/cell.h
 CMakeFiles/GAME_PROJ.dir/sources/objectDamage.cpp.o: ../headers/cellObject.h

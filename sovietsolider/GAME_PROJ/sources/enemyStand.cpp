@@ -19,7 +19,7 @@ void::EnemyStand::init_fight(Player& player, Field& field)
 {
 	if(seePlayer(player))
 	{
-		std::cout << player.get_health() << '\n';
+		//std::cout << player.get_health() << '\n';
 		player.set_health(player.get_health()-damage);
 		Logger::getGlobal().display(player, "Player took damage from Stand");
 	}
