@@ -64,6 +64,14 @@ enemy.h
 iostream
 -
 
+/home/greenjoker/GAME_PROJ/headers/exitCond.h
+gameCond.h
+/home/greenjoker/GAME_PROJ/headers/gameCond.h
+../headers/player.h
+/home/greenjoker/GAME_PROJ/headers/player.h
+../headers/field.h
+/home/greenjoker/GAME_PROJ/headers/field.h
+
 /home/greenjoker/GAME_PROJ/headers/field.h
 cell.h
 /home/greenjoker/GAME_PROJ/headers/cell.h
@@ -87,6 +95,8 @@ iostream
 -
 field_view.h
 /home/greenjoker/GAME_PROJ/headers/field_view.h
+random
+-
 player.h
 /home/greenjoker/GAME_PROJ/headers/player.h
 termios.h
@@ -109,6 +119,8 @@ objectRange.h
 /home/greenjoker/GAME_PROJ/headers/objectRange.h
 object.h
 /home/greenjoker/GAME_PROJ/headers/object.h
+
+/home/greenjoker/GAME_PROJ/headers/gameCond.h
 
 /home/greenjoker/GAME_PROJ/headers/logger.h
 ostream
@@ -160,6 +172,18 @@ cellObject.h
 ostream
 -
 
+/home/greenjoker/GAME_PROJ/headers/playerDeathCond.h
+gameCond.h
+/home/greenjoker/GAME_PROJ/headers/gameCond.h
+player.h
+/home/greenjoker/GAME_PROJ/headers/player.h
+
+/home/greenjoker/GAME_PROJ/sources/exitCond.cpp
+../headers/exitCond.h
+/home/greenjoker/GAME_PROJ/headers/exitCond.h
+../headers/cell.h
+/home/greenjoker/GAME_PROJ/headers/cell.h
+
 /home/greenjoker/GAME_PROJ/sources/game.cpp
 ../headers/game.h
 /home/greenjoker/GAME_PROJ/headers/game.h
@@ -173,4 +197,22 @@ vector
 /home/greenjoker/GAME_PROJ/headers/logger.h
 ../headers/fstreamWrapper.h
 /home/greenjoker/GAME_PROJ/headers/fstreamWrapper.h
+
+/home/greenjoker/GAME_PROJ/sources/main.cpp
+SFML/Graphics.hpp
+/home/greenjoker/GAME_PROJ/sources/SFML/Graphics.hpp
+../headers/game.h
+/home/greenjoker/GAME_PROJ/headers/game.h
+../headers/exitCond.h
+/home/greenjoker/GAME_PROJ/headers/exitCond.h
+game.cpp
+/home/greenjoker/GAME_PROJ/sources/game.cpp
+exitCond.cpp
+/home/greenjoker/GAME_PROJ/sources/exitCond.cpp
+playerDeathCond.cpp
+/home/greenjoker/GAME_PROJ/sources/playerDeathCond.cpp
+
+/home/greenjoker/GAME_PROJ/sources/playerDeathCond.cpp
+../headers/playerDeathCond.h
+/home/greenjoker/GAME_PROJ/headers/playerDeathCond.h
 

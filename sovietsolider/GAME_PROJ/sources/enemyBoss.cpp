@@ -121,7 +121,7 @@ void EnemyBoss::move(Player& player, Field& field)
 		move_up(player, field);
 	count_of_move++;
 
-	Logger::getGlobal().display(*this, "MOVE");
+	Logger::getGlobal().display(*this, "Boss is moving");
 }
 
 void EnemyBoss::initView()
