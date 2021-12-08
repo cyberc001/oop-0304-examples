@@ -116,7 +116,6 @@ int Player::get_range() const { return range; }
 
 void Player::set_range(int range) { this->range = range; }  
 
-#include "../headers/enemy.h"
 
 std::ostream& operator<<(std::ostream& os, const Player& actor)
 {

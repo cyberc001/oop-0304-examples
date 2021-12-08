@@ -18,20 +18,18 @@ OstreamWrapper::~OstreamWrapper()
 
 void OstreamWrapper::link()
 {
-	if(link_cnt == 0 && os_closed)
+	if(os_closed)
 	{
 		os_open();
 		os_closed = false;
 	}
 
-	link_cnt++;
 }
 
 void OstreamWrapper::unlink()
 {
-	link_cnt--;
 	
-	if(link_cnt && !os_closed)
+	if(!os_closed)
 	{
 		os_close();
 		os_closed = true;

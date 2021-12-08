@@ -6,7 +6,8 @@
 #include "../headers/fstreamWrapper.h"
 #define NUM_OF_ENEMIES 3
 
-void Game::clear_terminal_icanon()
+template <typename winCondType, typename lossCondType, int difficulty>
+void Game<winCondType, lossCondType, difficulty>::clear_terminal_icanon()
 {
 	static struct termios told, tnew;
 	tcgetattr(STDIN_FILENO, &told);
@@ -15,7 +16,8 @@ void Game::clear_terminal_icanon()
 	tcsetattr(STDIN_FILENO, TCSANOW, &tnew);
 }
 
-void Game::set_terminal_icanon()
+template <typename winCondType, typename lossCondType, int difficulty>
+void Game<winCondType, lossCondType, difficulty>::set_terminal_icanon()
 {
 	static struct termios told, tnew;
 	tcgetattr(STDIN_FILENO, &told);
@@ -24,7 +26,8 @@ void Game::set_terminal_icanon()
 	tcsetattr(STDIN_FILENO, TCSANOW, &tnew);
 }
 
-void Game::input_control(char symb, Player& player, Field& field,
+template <typename winCondType, typename lossCondType, int difficulty>
+void Game<winCondType, lossCondType, difficulty>::input_control(char symb, Player& player, Field& field,
 std::vector<Enemy*> enemy_container)
 {
 	if(symb == 'q')
@@ -44,53 +47,51 @@ std::vector<Enemy*> enemy_container)
 		}
 }
 
-void Game::clear_screen()
+template <typename winCondType, typename lossCondType, int difficulty>
+void Game<winCondType, lossCondType, difficulty>::clear_screen()
 {
 	std::cout << "\033[H\033[J";
 }
 
+template <typename winCondType, typename lossCondType, int difficulty>
+void Game<winCondType, lossCondType, difficulty>::spawn_enemy(std::vector<Enemy*>& enemy_container)
+{
+	
+	std::mt19937 generator;
+    std::random_device rd;
+    generator.seed(rd());
+    std::uniform_int_distribution<> chooseEn(0, 2);
+	
+	for(auto i = 0; i<difficulty; i++)
+	{
+		int choseEnemy = chooseEn(generator);
+		std::cout << chooseEn << std::endl;
+		if(choseEnemy == 0)
+			enemy_container.push_back(new EnemyBoss);
+		else if(choseEnemy == 1)
+			enemy_container.push_back(new EnemyMove);
+		else if(choseEnemy == 2)
+			enemy_container.push_back(new EnemyStand);
+		std::cout << enemy_container.size() << std::endl;
+	}
+	
 
-void Game::onStart()
+}
+
+template <typename winCondType, typename lossCondType, int difficulty>
+void Game<winCondType, lossCondType, difficulty>::Update()
 {
 	std::ofstream file; /// без обертки
 	FstreamWrapper file_w(file, "gameOut");
 	OstreamWrapper cout_w(std::cout);
 	Logger::initGlobal({file_w, cout_w});
-	//std::vector<std::reference_wrapper<OstreamWrapper>> streams;
-	//main logic
-	clear_terminal_icanon();
-	int input;
-	Field field(20, 20); Player player;
-	std::vector< Enemy* > enemy_container;
-	std::vector< Object* > objects_container;
-	enemy_container.push_back(new EnemyBoss);          
-	enemy_container.push_back(new EnemyStand);
-	enemy_container.push_back(new EnemyMove);
-	objects_container.push_back(new ObjectHeal);
-	objects_container.push_back(new ObjectDamage);
-	objects_container.push_back(new ObjectRange);
-
+	FieldView print(*field);
 	
-	//if(enemy_container.size()*6+objects_container.size() > field.get_size_x()*field.get_size_y())
-	//	return;
-
-	//if(enemy_container.size())
-
-	Cell& entrance = field.put_exits(2);  //ссылка на вход
-	field.put_enemies(enemy_container);
-	field.put_object(objects_container);
-
-	player.set_posx(entrance.get_x()); player.set_posy(entrance.get_y()); //coords in player according to entrance
-	field.get_cell(player.get_posx(), player.get_posy()).set_display('3');
-	entrance.set_player(player);
-	
-	FieldView print(field);
-
-
 	//clear_screen();
+	int input;
 	print.display();
 	input = fgetc(stdin);
-	input_control(input, player, field, enemy_container);
+	input_control(input, player, *field, enemy_container);
 
 	clear_screen();
 	while(true)
@@ -98,29 +99,92 @@ void Game::onStart()
 		clear_screen();
 
 		print.display();
-		if(player.check_for_death(field))
+		//if(player.check_for_death(*field))
+		//	return;
+		if(winCond.isDone())
+		{
+			std::cout << "EXIT COND WORKS";
+			
 			return;
-		if(field.get_cell(player.get_posx(), player.get_posy()).get_exit())
+		}
+		if(lossCond.isDone())
+		{
+			std::cout << "Player is Dead";
 			return;
-		//std::cout << player.get_health() << std::endl;
+		}
+
+		std::cout << enemy_container.size() << std::endl;
 		
 		for(int i=0; i<objects_container.size();i++)
 		{
-			objects_container.at(i)->onPass(player, field);
-			objects_container.at(i)->check_for_death(field, objects_container, i);
+			objects_container.at(i)->onPass(player, *field);
+			objects_container.at(i)->check_for_death(*field, objects_container, i);
 		}
 		for(int i=0;i<enemy_container.size();i++)
 		{
-			enemy_container.at(i)->init_fight(player, field);
-			enemy_container.at(i)->move(player, field);
-			enemy_container.at(i)->check_for_death(field, enemy_container, i);			
+			enemy_container.at(i)->init_fight(player, *field);
+			enemy_container.at(i)->move(player, *field);
+			enemy_container.at(i)->check_for_death(*field, enemy_container, i);			
 		}
 		Logger::getGlobal().display("");
 		input = fgetc(stdin);
-		input_control(input, player, field, enemy_container);
-
-
+		input_control(input, player, *field, enemy_container);
+	
+ 
 	}
 	set_terminal_icanon();
-	
 }
+
+template <typename winCondType, typename lossCondType, int difficulty>
+void Game<winCondType, lossCondType, difficulty>::onStart()
+{
+	clear_terminal_icanon();
+	
+	field = new Field(20, 20);
+	
+	objects_container.push_back(new ObjectHeal);
+	objects_container.push_back(new ObjectDamage);
+	objects_container.push_back(new ObjectRange);
+
+	spawn_enemy(enemy_container);
+
+	Cell& entrance = field->put_exits(2);  //ссылка на вход
+	field->put_enemies(enemy_container);
+	field->put_object(objects_container);
+
+	player.set_posx(entrance.get_x()); player.set_posy(entrance.get_y()); //coords in player according to entrance
+	field->get_cell(player.get_posx(), player.get_posy()).set_display('3');
+	entrance.set_player(player);
+
+}
+
+template <typename winCondType, typename lossCondType, int difficulty>
+std::vector<Enemy*>& Game<winCondType, lossCondType, difficulty>::get_enemies()
+{
+	return enemy_container;
+}
+
+template <typename winCondType, typename lossCondType, int difficulty>
+Field& Game<winCondType, lossCondType, difficulty>::get_field()
+{
+	return *field;
+}
+
+template <typename winCondType, typename lossCondType, int difficulty>
+Player& Game<winCondType, lossCondType, difficulty>::get_player()
+{
+	return player;
+}
+
+template <typename winCondType, typename lossCondType, int difficulty>
+winCondType& Game<winCondType, lossCondType, difficulty>::get_winCond()
+{
+	return winCond;
+}
+
+template <typename winCondType, typename lossCondType, int difficulty>
+lossCondType& Game<winCondType, lossCondType, difficulty>::get_lossCond()
+{
+	return lossCond;
+}
+

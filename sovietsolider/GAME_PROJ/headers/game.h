@@ -2,6 +2,7 @@
 #define GAME_H
 #include <iostream>
 #include "field_view.h"
+#include <random>
 #include "player.h"
 #include <termios.h>
 #include <unistd.h>
@@ -14,26 +15,36 @@
 #include "objectRange.h"
 #include "object.h"
 
-
+template <typename winCondType, typename lossCondType, int difficulty>
 class Game
 {
-	float health, damage;
 	public:
+		winCondType winCond;
+		lossCondType lossCond;
+		
 		void onStart();
+		void Update();
 		void clear_terminal_icanon();
 		void set_terminal_icanon();
 		void clear_screen();
 		void initTermios(int echo);
 
-		void move_player_up(Player& player, Field& field);
-		void move_player_down(Player& player, Field& field);
-		void move_player_left(Player& player, Field& field);
-		void move_player_right(Player& player, Field& field);
-
-		void init_fight(Player& player, Enemy* enemy);
-		void move_enemies(std::vector< Enemy* > enemy_container);
-
 		void input_control(char symb, Player& player, Field& field, std::vector<Enemy*> enemy_container);
+		void spawn_enemy(std::vector<Enemy*>& enemy_container);
+
+		std::vector<Enemy*>& get_enemies();
+		Field& get_field();
+		Player& get_player();
+
+		winCondType& get_winCond();
+		lossCondType& get_lossCond();
+
+	private:
+		std::vector<Enemy*> enemy_container;
+		std::vector<Object*> objects_container;
+
+		Field* field;
+		Player player;
 
 };
 
