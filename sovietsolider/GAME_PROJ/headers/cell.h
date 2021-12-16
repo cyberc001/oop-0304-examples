@@ -22,6 +22,7 @@ private:
 protected:
 public:
     Cell();
+    //~Cell();
     void set_display(char ch);
     CellView& get_display();
 

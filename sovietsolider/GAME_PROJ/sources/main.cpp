@@ -7,7 +7,7 @@
 int main()
 {
 
-    Game <ExitCond<1>, DeathCond, 2>game;
+    Game <ExitCond<1>, DeathCond<0>, 2>game;
     game.onStart();
     game.get_winCond().setField(game.get_field());
     game.get_winCond().setPlayer(game.get_player());

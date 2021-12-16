@@ -74,12 +74,12 @@ clean: CMakeFiles/GAME_PROJ.dir/clean
 CMakeFiles/GAME_PROJ.dir/all:
 	$(MAKE) -f CMakeFiles/GAME_PROJ.dir/build.make CMakeFiles/GAME_PROJ.dir/depend
 	$(MAKE) -f CMakeFiles/GAME_PROJ.dir/build.make CMakeFiles/GAME_PROJ.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/greenjoker/GAME_PROJ/build/CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20 "Built target GAME_PROJ"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/greenjoker/GAME_PROJ/build/CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29 "Built target GAME_PROJ"
 .PHONY : CMakeFiles/GAME_PROJ.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/GAME_PROJ.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/greenjoker/GAME_PROJ/build/CMakeFiles 20
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/greenjoker/GAME_PROJ/build/CMakeFiles 29
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/GAME_PROJ.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/greenjoker/GAME_PROJ/build/CMakeFiles 0
 .PHONY : CMakeFiles/GAME_PROJ.dir/rule

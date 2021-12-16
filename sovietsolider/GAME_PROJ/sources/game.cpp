@@ -4,6 +4,7 @@
 #include <vector>
 #include "../headers/logger.h"
 #include "../headers/fstreamWrapper.h"
+
 #define NUM_OF_ENEMIES 3
 
 template <typename winCondType, typename lossCondType, int difficulty>
@@ -27,27 +28,6 @@ void Game<winCondType, lossCondType, difficulty>::set_terminal_icanon()
 }
 
 template <typename winCondType, typename lossCondType, int difficulty>
-void Game<winCondType, lossCondType, difficulty>::input_control(char symb, Player& player, Field& field,
-std::vector<Enemy*> enemy_container)
-{
-	if(symb == 'q')
-			exit(1);
-		else if(symb == 'w')
-			player.move_up(field);
-		else if(symb == 's')
-			player.move_down(field);
-		else if(symb == 'a')
-			player.move_left(field);
-		else if(symb == 'd')
-			player.move_right(field);
-		else if(symb == 'f')
-		{
-			for(int i=0; i<enemy_container.size(); i++)
-				player.init_fight(enemy_container.at(i), field);
-		}
-}
-
-template <typename winCondType, typename lossCondType, int difficulty>
 void Game<winCondType, lossCondType, difficulty>::clear_screen()
 {
 	std::cout << "\033[H\033[J";
@@ -56,7 +36,6 @@ void Game<winCondType, lossCondType, difficulty>::clear_screen()
 template <typename winCondType, typename lossCondType, int difficulty>
 void Game<winCondType, lossCondType, difficulty>::spawn_enemy(std::vector<Enemy*>& enemy_container)
 {
-	
 	std::mt19937 generator;
     std::random_device rd;
     generator.seed(rd());
@@ -81,17 +60,15 @@ void Game<winCondType, lossCondType, difficulty>::spawn_enemy(std::vector<Enemy*
 template <typename winCondType, typename lossCondType, int difficulty>
 void Game<winCondType, lossCondType, difficulty>::Update()
 {
-	std::ofstream file; /// без обертки
+	std::ofstream file; 
 	FstreamWrapper file_w(file, "gameOut");
 	OstreamWrapper cout_w(std::cout);
 	Logger::initGlobal({file_w, cout_w});
 	FieldView print(*field);
-	
-	//clear_screen();
+
 	int input;
 	print.display();
-	input = fgetc(stdin);
-	input_control(input, player, *field, enemy_container);
+	//input = fgetc(stdin);
 
 	clear_screen();
 	while(true)
@@ -99,8 +76,6 @@ void Game<winCondType, lossCondType, difficulty>::Update()
 		clear_screen();
 
 		print.display();
-		//if(player.check_for_death(*field))
-		//	return;
 		if(winCond.isDone())
 		{
 			std::cout << "EXIT COND WORKS";
@@ -113,7 +88,7 @@ void Game<winCondType, lossCondType, difficulty>::Update()
 			return;
 		}
 
-		std::cout << enemy_container.size() << std::endl;
+		//std::cout << enemy_container.size() << std::endl;
 		
 		for(int i=0; i<objects_container.size();i++)
 		{
@@ -127,10 +102,9 @@ void Game<winCondType, lossCondType, difficulty>::Update()
 			enemy_container.at(i)->check_for_death(*field, enemy_container, i);			
 		}
 		Logger::getGlobal().display("");
-		input = fgetc(stdin);
-		input_control(input, player, *field, enemy_container);
-	
- 
+		//input = fgetc(stdin);		//
+		//input_controller.set_symb(input);
+		input_controller->act();
 	}
 	set_terminal_icanon();
 }
@@ -156,6 +130,11 @@ void Game<winCondType, lossCondType, difficulty>::onStart()
 	field->get_cell(player.get_posx(), player.get_posy()).set_display('3');
 	entrance.set_player(player);
 
+	input_controller = new InputController(&player, field, &enemy_container);
+	//nput_controller.set_field(field);
+	//input_controller.set_player(&player);
+	//input_controller.set_enemies(&enemy_container);
+	input_controller->initialize_binds();
 }
 
 template <typename winCondType, typename lossCondType, int difficulty>
@@ -187,4 +166,20 @@ lossCondType& Game<winCondType, lossCondType, difficulty>::get_lossCond()
 {
 	return lossCond;
 }
+
+template <typename winCondType, typename lossCondType, int difficulty>
+Game<winCondType, lossCondType, difficulty>::~Game()
+{
+	delete field;
+	for(int i=0;i<enemy_container.size(); i++)
+	{
+		delete enemy_container.at(i);
+	}
+	for(int i=0;i<objects_container.size(); i++)
+	{
+		delete objects_container.at(i);
+	}
+	delete input_controller;
+}
+
 
