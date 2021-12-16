@@ -3,7 +3,8 @@
 #include <fstream>
 #include <iostream>
 
-#include "game_ui.h"
+#include "ui/game_view.h"
+#include "ui/ui_menu_player_actions.h"
 
 #include "actors/enemies/acolyte.h"
 
@@ -15,14 +16,6 @@
 #include "actors/items/armor_item.h"
 #include "actors/items/health_item.h"
 #include "actors/items/weapon_item.h"
-
-
-static void clear_tscreen()
-{
-	std::cout << "\033[H\033[J";
-}
-
-
 
 std::vector<actor_spawner_func> game::enemy_spawn_funcs;
 
@@ -47,7 +40,7 @@ void game::init()
 		mainplr->setAP(8);
 		ce->set_object(mainplr);
 
-		mainplr->addItemToInventory(new health_item(30));
+		mainplr->addItemToInventory(new health_item(15));
 		mainplr->addItemToInventory(new weapon_item(14, 1.));
 		mainplr->addItemToInventory(new armor_item(2, 0.2));
 	}
@@ -63,69 +56,56 @@ void game::init()
 
 void game::run()
 {
+	game_view main_ui(*this);
+	input_manager inmngr;
+
+	ui_menu_player_actions menu_actions(0, &mainplr->getMoveAction());
+
+	ostream_wrapper coutw(std::cout);
+
 	std::ofstream fd_out;
 	fstream_wrapper fdw_out(fd_out, "game_out");
-	ostream_wrapper obs_bufw(obs_buf);
+	ostream_wrapper log_bufw(main_ui.getLogBuffer());
 
-	global_logger::init_loggers({fdw_out, obs_bufw});
-	observer_actor mainplr_obs({fdw_out, obs_bufw});
+	global_logger::init_loggers(GLOGGER_LEVEL_UI, {coutw});
+	global_logger::init_loggers(GLOGGER_LEVEL_EVENT, {fdw_out, log_bufw});
+	observer_actor mainplr_obs({fdw_out, log_bufw});
 	mainplr_obs.setActor(*mainplr);
 
 	std::vector<observer_actor*> actors_obs;
 	for(auto i = actors_spawned.begin(); i != actors_spawned.end(); ++i)
 	{
-		observer_actor* obsa = new observer_actor({fdw_out, obs_bufw});
+		observer_actor* obsa = new observer_actor({fdw_out, log_bufw});
 		obsa->setActor(**i);
 		actors_obs.push_back(obsa);
 	}
 
-	input_manager inmngr;
-	game_ui action_ui(*this, 0, &mainplr->getMoveAction());
-
-	refresh(action_ui);
+	main_ui.refresh();
 
 	int first_iter = 1;
 	while(1){
-		clear_tscreen();
 		if(!first_iter)
 			mainfield->tickActors();
 		else
 			first_iter = 0;
 
 		if(win_cond.isMet()){
-			std::cout << "You won!\n";
+			global_logger::message(GLOGGER_LEVEL_EVENT, "You won!");
 			break;
 		}
 		if(lose_cond.isMet()){
-			std::cout << "You lost!\n";
+			global_logger::message(GLOGGER_LEVEL_EVENT, "You lost!");
 			break;
 		}
 
-		mainfield_view->display();
-
-		std::cout << obs_buf.str();
-		std::cout << '\n';
-		action_ui.draw_player_actions();
-		std::cout << '\n';
-
-		action_ui.handle_action_menu(inmngr);
-
-		obs_buf.str("");
+		main_ui.refresh();
+		menu_actions.execute(main_ui, inmngr);
+		main_ui.clearLogBuffer();
 	}
 
+	main_ui.refresh();
 	for(auto i = actors_obs.begin(); i != actors_obs.end(); ++i)
 		delete *i;
-}
-
-
-void game::refresh(game_ui& ui)
-{
-	clear_tscreen();
-	mainfield_view->display();
-	std::cout << obs_buf.str();
-	std::cout << '\n';
-	ui.draw_player_actions();
-	std::cout << '\n';
 }
 
 game::~game()
@@ -140,4 +120,5 @@ game::~game()
 
 player& game::getMainPlayer() { return *mainplr; }
 field& game::getMainField() { return *mainfield; }
+
 field_view& game::getMainFieldView() { return *mainfield_view; }

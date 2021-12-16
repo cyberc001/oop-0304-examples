@@ -84,7 +84,7 @@ void action_move::execute(size_t& ap, actor* active, actor* passive, cell* c)
 	if(total_ap_cost > 0.0){
 		std::stringstream ss;
 		ss << active->getName() << " moved to (" << curc->get_x() << "; " << curc->get_y() << ")";
-		global_logger::message(ss.str());
+		global_logger::message(GLOGGER_LEVEL_EVENT, ss.str());
 	}
 
 

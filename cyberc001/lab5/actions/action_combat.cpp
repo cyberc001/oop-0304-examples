@@ -23,5 +23,5 @@ void action_combat::execute(size_t& ap, actor* active, actor* passive, cell* c)
 
 	std::stringstream ss;
 	ss << active->getName() << " dealt " << dmgdealt << " damage to " << passive->getName();
-	global_logger::message(ss.str());
+	global_logger::message(GLOGGER_LEVEL_EVENT, ss.str());
 }

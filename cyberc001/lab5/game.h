@@ -1,8 +1,6 @@
 #ifndef GAME_H
 #define GAME_H
 
-#include <sstream>
-
 #include "logger/ostream_wrapper.h"
 #include "logger/observer_actor.h"
 
@@ -25,7 +23,6 @@ class game
 
 	field* mainfield;
 	field_view* mainfield_view;
-	std::stringstream obs_buf; // буффер для событий изменения сущностей
 
 	player* mainplr = nullptr;
 
@@ -47,13 +44,10 @@ class game
 	void init();
 	void run();
 
-
-	// UI
-	void refresh(game_ui& ui);
-
 	// public getters
 	player& getMainPlayer();
 	field& getMainField();
+
 	field_view& getMainFieldView();
 };
 

@@ -59,7 +59,7 @@ void weapon_item_fire::execute(size_t& ap, actor* active, actor* passive, cell* 
 	if(!item.rollForHit()){
 		std::stringstream ss;
 		ss << active->getName() << " missed trying to shoot " << passive->getName();
-		global_logger::message(ss.str());
+		global_logger::message(GLOGGER_LEVEL_EVENT, ss.str());
 		return;
 	}
 
@@ -68,5 +68,5 @@ void weapon_item_fire::execute(size_t& ap, actor* active, actor* passive, cell* 
 
 	std::stringstream ss;
 	ss << active->getName() << " fired a weapon at " << passive->getName() << " to deal " << dmgdealt << " damage";
-	global_logger::message(ss.str());
+	global_logger::message(GLOGGER_LEVEL_EVENT, ss.str());
 }

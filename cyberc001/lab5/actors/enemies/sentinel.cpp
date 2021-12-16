@@ -5,7 +5,7 @@ sentinel::sentinel()
 	initView();
 
 	max_ap = 9;
-	detection_dist = 25;
+	detection_dist = 45;
 
 	setHealth(30);
 	setMaxHealth(30);

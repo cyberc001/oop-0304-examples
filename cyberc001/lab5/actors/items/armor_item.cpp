@@ -55,7 +55,7 @@ void armor_item_wear::execute(size_t& ap, actor* active, actor* passive, cell* c
 		ss << active->getName() << " took off \"" << item.getName() << "\"";
 	else
 		ss << active->getName() << " put on \"" << item.getName() << "\"";
-	global_logger::message(ss.str());
+	global_logger::message(GLOGGER_LEVEL_EVENT, ss.str());
 
 	item.setWorn(!item.isWorn());
 	ap -= getAPCost(active, passive, c);

@@ -46,5 +46,5 @@ void health_item_heal::execute(size_t& ap, actor* active, actor* passive, cell* 
 
 	std::stringstream ss;
 	ss << active->getName() << " healed " << passive->getName() << " for " << heal_amt << " damage";
-	global_logger::message(ss.str());
+	global_logger::message(GLOGGER_LEVEL_EVENT, ss.str());
 }

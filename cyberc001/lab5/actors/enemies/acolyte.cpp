@@ -5,9 +5,9 @@ acolyte::acolyte()
 	initView();
 
 	max_ap = 8;
-	detection_dist = 15;
+	detection_dist = 35;
 
-	setHealth(50);
+	setHealth(40);
 	setMaxHealth(50);
 	setDamageThreshold(3);
 	setDamageResistance(0.2);

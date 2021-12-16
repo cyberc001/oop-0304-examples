@@ -1,7 +1,7 @@
 GCPP = g++ -std=c++17 -g
 
 
-lab5: main.cpp game.o game_ui.o field.o field_view.o cell.o cell_view.o cell_entrance.o cell_exit.o cell_object.o cell_object_view.o actor.o enemy.o item.o player.o armor_item.o health_item.o weapon_item.o acolyte.o sentinel.o stalkerbot.o action_combat.o action.o action_move.o action_shoot_ballistic.o observer.o observable.o observer_actor.o global_logger.o ostream_wrapper.o fstream_wrapper.o exit_condition.o player_death_condition.o key_bind_manager.o input_manager.o
+lab5: main.cpp game.o game_view.o ui_menu_player_actions.o ui_menu_target_select.o field.o field_view.o cell.o cell_view.o cell_entrance.o cell_exit.o cell_object.o cell_object_view.o actor.o enemy.o item.o player.o armor_item.o health_item.o weapon_item.o acolyte.o sentinel.o stalkerbot.o action_combat.o action.o action_move.o action_shoot_ballistic.o observer.o observable.o observer_actor.o global_logger.o ostream_wrapper.o fstream_wrapper.o exit_condition.o player_death_condition.o key_bind_manager.o input_manager.o
 	$(GCPP) $^ -o lab5
 clean:
 	-rm -f *.o
@@ -9,7 +9,12 @@ clean:
 
 game.o: game.cpp game.h
 	$(GCPP) -c $< -o $@
-game_ui.o: game_ui.cpp game_ui.h
+
+game_view.o: ui/game_view.cpp ui/game_view.h
+	$(GCPP) -c $< -o $@
+ui_menu_player_actions.o: ui/ui_menu_player_actions.cpp ui/ui_menu_player_actions.h
+	$(GCPP) -c $< -o $@
+ui_menu_target_select.o: ui/ui_menu_target_select.cpp ui/ui_menu_target_select.h
 	$(GCPP) -c $< -o $@
 
 field.o: field.cpp field.h

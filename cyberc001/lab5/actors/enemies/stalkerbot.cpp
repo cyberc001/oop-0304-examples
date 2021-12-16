@@ -5,7 +5,7 @@ stalkerbot::stalkerbot()
 	initView();
 
 	max_ap = 6;
-	detection_dist = 20;
+	detection_dist = 25;
 
 	setHealth(80);
 	setMaxHealth(80);
