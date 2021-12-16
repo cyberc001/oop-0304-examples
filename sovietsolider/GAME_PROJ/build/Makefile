@@ -123,6 +123,222 @@ GAME_PROJ/fast:
 	$(MAKE) -f CMakeFiles/GAME_PROJ.dir/build.make CMakeFiles/GAME_PROJ.dir/build
 .PHONY : GAME_PROJ/fast
 
+sources/binds/bind.o: sources/binds/bind.cpp.o
+
+.PHONY : sources/binds/bind.o
+
+# target to build an object file
+sources/binds/bind.cpp.o:
+	$(MAKE) -f CMakeFiles/GAME_PROJ.dir/build.make CMakeFiles/GAME_PROJ.dir/sources/binds/bind.cpp.o
+.PHONY : sources/binds/bind.cpp.o
+
+sources/binds/bind.i: sources/binds/bind.cpp.i
+
+.PHONY : sources/binds/bind.i
+
+# target to preprocess a source file
+sources/binds/bind.cpp.i:
+	$(MAKE) -f CMakeFiles/GAME_PROJ.dir/build.make CMakeFiles/GAME_PROJ.dir/sources/binds/bind.cpp.i
+.PHONY : sources/binds/bind.cpp.i
+
+sources/binds/bind.s: sources/binds/bind.cpp.s
+
+.PHONY : sources/binds/bind.s
+
+# target to generate assembly for a file
+sources/binds/bind.cpp.s:
+	$(MAKE) -f CMakeFiles/GAME_PROJ.dir/build.make CMakeFiles/GAME_PROJ.dir/sources/binds/bind.cpp.s
+.PHONY : sources/binds/bind.cpp.s
+
+sources/binds/bindExit.o: sources/binds/bindExit.cpp.o
+
+.PHONY : sources/binds/bindExit.o
+
+# target to build an object file
+sources/binds/bindExit.cpp.o:
+	$(MAKE) -f CMakeFiles/GAME_PROJ.dir/build.make CMakeFiles/GAME_PROJ.dir/sources/binds/bindExit.cpp.o
+.PHONY : sources/binds/bindExit.cpp.o
+
+sources/binds/bindExit.i: sources/binds/bindExit.cpp.i
+
+.PHONY : sources/binds/bindExit.i
+
+# target to preprocess a source file
+sources/binds/bindExit.cpp.i:
+	$(MAKE) -f CMakeFiles/GAME_PROJ.dir/build.make CMakeFiles/GAME_PROJ.dir/sources/binds/bindExit.cpp.i
+.PHONY : sources/binds/bindExit.cpp.i
+
+sources/binds/bindExit.s: sources/binds/bindExit.cpp.s
+
+.PHONY : sources/binds/bindExit.s
+
+# target to generate assembly for a file
+sources/binds/bindExit.cpp.s:
+	$(MAKE) -f CMakeFiles/GAME_PROJ.dir/build.make CMakeFiles/GAME_PROJ.dir/sources/binds/bindExit.cpp.s
+.PHONY : sources/binds/bindExit.cpp.s
+
+sources/binds/bindFight.o: sources/binds/bindFight.cpp.o
+
+.PHONY : sources/binds/bindFight.o
+
+# target to build an object file
+sources/binds/bindFight.cpp.o:
+	$(MAKE) -f CMakeFiles/GAME_PROJ.dir/build.make CMakeFiles/GAME_PROJ.dir/sources/binds/bindFight.cpp.o
+.PHONY : sources/binds/bindFight.cpp.o
+
+sources/binds/bindFight.i: sources/binds/bindFight.cpp.i
+
+.PHONY : sources/binds/bindFight.i
+
+# target to preprocess a source file
+sources/binds/bindFight.cpp.i:
+	$(MAKE) -f CMakeFiles/GAME_PROJ.dir/build.make CMakeFiles/GAME_PROJ.dir/sources/binds/bindFight.cpp.i
+.PHONY : sources/binds/bindFight.cpp.i
+
+sources/binds/bindFight.s: sources/binds/bindFight.cpp.s
+
+.PHONY : sources/binds/bindFight.s
+
+# target to generate assembly for a file
+sources/binds/bindFight.cpp.s:
+	$(MAKE) -f CMakeFiles/GAME_PROJ.dir/build.make CMakeFiles/GAME_PROJ.dir/sources/binds/bindFight.cpp.s
+.PHONY : sources/binds/bindFight.cpp.s
+
+sources/binds/bindMoveDown.o: sources/binds/bindMoveDown.cpp.o
+
+.PHONY : sources/binds/bindMoveDown.o
+
+# target to build an object file
+sources/binds/bindMoveDown.cpp.o:
+	$(MAKE) -f CMakeFiles/GAME_PROJ.dir/build.make CMakeFiles/GAME_PROJ.dir/sources/binds/bindMoveDown.cpp.o
+.PHONY : sources/binds/bindMoveDown.cpp.o
+
+sources/binds/bindMoveDown.i: sources/binds/bindMoveDown.cpp.i
+
+.PHONY : sources/binds/bindMoveDown.i
+
+# target to preprocess a source file
+sources/binds/bindMoveDown.cpp.i:
+	$(MAKE) -f CMakeFiles/GAME_PROJ.dir/build.make CMakeFiles/GAME_PROJ.dir/sources/binds/bindMoveDown.cpp.i
+.PHONY : sources/binds/bindMoveDown.cpp.i
+
+sources/binds/bindMoveDown.s: sources/binds/bindMoveDown.cpp.s
+
+.PHONY : sources/binds/bindMoveDown.s
+
+# target to generate assembly for a file
+sources/binds/bindMoveDown.cpp.s:
+	$(MAKE) -f CMakeFiles/GAME_PROJ.dir/build.make CMakeFiles/GAME_PROJ.dir/sources/binds/bindMoveDown.cpp.s
+.PHONY : sources/binds/bindMoveDown.cpp.s
+
+sources/binds/bindMoveLeft.o: sources/binds/bindMoveLeft.cpp.o
+
+.PHONY : sources/binds/bindMoveLeft.o
+
+# target to build an object file
+sources/binds/bindMoveLeft.cpp.o:
+	$(MAKE) -f CMakeFiles/GAME_PROJ.dir/build.make CMakeFiles/GAME_PROJ.dir/sources/binds/bindMoveLeft.cpp.o
+.PHONY : sources/binds/bindMoveLeft.cpp.o
+
+sources/binds/bindMoveLeft.i: sources/binds/bindMoveLeft.cpp.i
+
+.PHONY : sources/binds/bindMoveLeft.i
+
+# target to preprocess a source file
+sources/binds/bindMoveLeft.cpp.i:
+	$(MAKE) -f CMakeFiles/GAME_PROJ.dir/build.make CMakeFiles/GAME_PROJ.dir/sources/binds/bindMoveLeft.cpp.i
+.PHONY : sources/binds/bindMoveLeft.cpp.i
+
+sources/binds/bindMoveLeft.s: sources/binds/bindMoveLeft.cpp.s
+
+.PHONY : sources/binds/bindMoveLeft.s
+
+# target to generate assembly for a file
+sources/binds/bindMoveLeft.cpp.s:
+	$(MAKE) -f CMakeFiles/GAME_PROJ.dir/build.make CMakeFiles/GAME_PROJ.dir/sources/binds/bindMoveLeft.cpp.s
+.PHONY : sources/binds/bindMoveLeft.cpp.s
+
+sources/binds/bindMoveRight.o: sources/binds/bindMoveRight.cpp.o
+
+.PHONY : sources/binds/bindMoveRight.o
+
+# target to build an object file
+sources/binds/bindMoveRight.cpp.o:
+	$(MAKE) -f CMakeFiles/GAME_PROJ.dir/build.make CMakeFiles/GAME_PROJ.dir/sources/binds/bindMoveRight.cpp.o
+.PHONY : sources/binds/bindMoveRight.cpp.o
+
+sources/binds/bindMoveRight.i: sources/binds/bindMoveRight.cpp.i
+
+.PHONY : sources/binds/bindMoveRight.i
+
+# target to preprocess a source file
+sources/binds/bindMoveRight.cpp.i:
+	$(MAKE) -f CMakeFiles/GAME_PROJ.dir/build.make CMakeFiles/GAME_PROJ.dir/sources/binds/bindMoveRight.cpp.i
+.PHONY : sources/binds/bindMoveRight.cpp.i
+
+sources/binds/bindMoveRight.s: sources/binds/bindMoveRight.cpp.s
+
+.PHONY : sources/binds/bindMoveRight.s
+
+# target to generate assembly for a file
+sources/binds/bindMoveRight.cpp.s:
+	$(MAKE) -f CMakeFiles/GAME_PROJ.dir/build.make CMakeFiles/GAME_PROJ.dir/sources/binds/bindMoveRight.cpp.s
+.PHONY : sources/binds/bindMoveRight.cpp.s
+
+sources/binds/bindMoveUp.o: sources/binds/bindMoveUp.cpp.o
+
+.PHONY : sources/binds/bindMoveUp.o
+
+# target to build an object file
+sources/binds/bindMoveUp.cpp.o:
+	$(MAKE) -f CMakeFiles/GAME_PROJ.dir/build.make CMakeFiles/GAME_PROJ.dir/sources/binds/bindMoveUp.cpp.o
+.PHONY : sources/binds/bindMoveUp.cpp.o
+
+sources/binds/bindMoveUp.i: sources/binds/bindMoveUp.cpp.i
+
+.PHONY : sources/binds/bindMoveUp.i
+
+# target to preprocess a source file
+sources/binds/bindMoveUp.cpp.i:
+	$(MAKE) -f CMakeFiles/GAME_PROJ.dir/build.make CMakeFiles/GAME_PROJ.dir/sources/binds/bindMoveUp.cpp.i
+.PHONY : sources/binds/bindMoveUp.cpp.i
+
+sources/binds/bindMoveUp.s: sources/binds/bindMoveUp.cpp.s
+
+.PHONY : sources/binds/bindMoveUp.s
+
+# target to generate assembly for a file
+sources/binds/bindMoveUp.cpp.s:
+	$(MAKE) -f CMakeFiles/GAME_PROJ.dir/build.make CMakeFiles/GAME_PROJ.dir/sources/binds/bindMoveUp.cpp.s
+.PHONY : sources/binds/bindMoveUp.cpp.s
+
+sources/binds/bindPlayer.o: sources/binds/bindPlayer.cpp.o
+
+.PHONY : sources/binds/bindPlayer.o
+
+# target to build an object file
+sources/binds/bindPlayer.cpp.o:
+	$(MAKE) -f CMakeFiles/GAME_PROJ.dir/build.make CMakeFiles/GAME_PROJ.dir/sources/binds/bindPlayer.cpp.o
+.PHONY : sources/binds/bindPlayer.cpp.o
+
+sources/binds/bindPlayer.i: sources/binds/bindPlayer.cpp.i
+
+.PHONY : sources/binds/bindPlayer.i
+
+# target to preprocess a source file
+sources/binds/bindPlayer.cpp.i:
+	$(MAKE) -f CMakeFiles/GAME_PROJ.dir/build.make CMakeFiles/GAME_PROJ.dir/sources/binds/bindPlayer.cpp.i
+.PHONY : sources/binds/bindPlayer.cpp.i
+
+sources/binds/bindPlayer.s: sources/binds/bindPlayer.cpp.s
+
+.PHONY : sources/binds/bindPlayer.s
+
+# target to generate assembly for a file
+sources/binds/bindPlayer.cpp.s:
+	$(MAKE) -f CMakeFiles/GAME_PROJ.dir/build.make CMakeFiles/GAME_PROJ.dir/sources/binds/bindPlayer.cpp.s
+.PHONY : sources/binds/bindPlayer.cpp.s
+
 sources/cell.o: sources/cell.cpp.o
 
 .PHONY : sources/cell.o
@@ -447,6 +663,33 @@ sources/game.cpp.s:
 	$(MAKE) -f CMakeFiles/GAME_PROJ.dir/build.make CMakeFiles/GAME_PROJ.dir/sources/game.cpp.s
 .PHONY : sources/game.cpp.s
 
+sources/inputController.o: sources/inputController.cpp.o
+
+.PHONY : sources/inputController.o
+
+# target to build an object file
+sources/inputController.cpp.o:
+	$(MAKE) -f CMakeFiles/GAME_PROJ.dir/build.make CMakeFiles/GAME_PROJ.dir/sources/inputController.cpp.o
+.PHONY : sources/inputController.cpp.o
+
+sources/inputController.i: sources/inputController.cpp.i
+
+.PHONY : sources/inputController.i
+
+# target to preprocess a source file
+sources/inputController.cpp.i:
+	$(MAKE) -f CMakeFiles/GAME_PROJ.dir/build.make CMakeFiles/GAME_PROJ.dir/sources/inputController.cpp.i
+.PHONY : sources/inputController.cpp.i
+
+sources/inputController.s: sources/inputController.cpp.s
+
+.PHONY : sources/inputController.s
+
+# target to generate assembly for a file
+sources/inputController.cpp.s:
+	$(MAKE) -f CMakeFiles/GAME_PROJ.dir/build.make CMakeFiles/GAME_PROJ.dir/sources/inputController.cpp.s
+.PHONY : sources/inputController.cpp.s
+
 sources/logger.o: sources/logger.cpp.o
 
 .PHONY : sources/logger.o
@@ -645,6 +888,30 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... GAME_PROJ"
+	@echo "... sources/binds/bind.o"
+	@echo "... sources/binds/bind.i"
+	@echo "... sources/binds/bind.s"
+	@echo "... sources/binds/bindExit.o"
+	@echo "... sources/binds/bindExit.i"
+	@echo "... sources/binds/bindExit.s"
+	@echo "... sources/binds/bindFight.o"
+	@echo "... sources/binds/bindFight.i"
+	@echo "... sources/binds/bindFight.s"
+	@echo "... sources/binds/bindMoveDown.o"
+	@echo "... sources/binds/bindMoveDown.i"
+	@echo "... sources/binds/bindMoveDown.s"
+	@echo "... sources/binds/bindMoveLeft.o"
+	@echo "... sources/binds/bindMoveLeft.i"
+	@echo "... sources/binds/bindMoveLeft.s"
+	@echo "... sources/binds/bindMoveRight.o"
+	@echo "... sources/binds/bindMoveRight.i"
+	@echo "... sources/binds/bindMoveRight.s"
+	@echo "... sources/binds/bindMoveUp.o"
+	@echo "... sources/binds/bindMoveUp.i"
+	@echo "... sources/binds/bindMoveUp.s"
+	@echo "... sources/binds/bindPlayer.o"
+	@echo "... sources/binds/bindPlayer.i"
+	@echo "... sources/binds/bindPlayer.s"
 	@echo "... sources/cell.o"
 	@echo "... sources/cell.i"
 	@echo "... sources/cell.s"
@@ -681,6 +948,9 @@ help:
 	@echo "... sources/game.o"
 	@echo "... sources/game.i"
 	@echo "... sources/game.s"
+	@echo "... sources/inputController.o"
+	@echo "... sources/inputController.i"
+	@echo "... sources/inputController.s"
 	@echo "... sources/logger.o"
 	@echo "... sources/logger.i"
 	@echo "... sources/logger.s"

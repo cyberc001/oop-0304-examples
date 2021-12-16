@@ -304,6 +304,123 @@ CMakeFiles/GAME_PROJ.dir/sources/enemy.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/GAME_PROJ.dir/sources/enemy.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/greenjoker/GAME_PROJ/sources/enemy.cpp -o CMakeFiles/GAME_PROJ.dir/sources/enemy.cpp.s
 
+CMakeFiles/GAME_PROJ.dir/sources/binds/bind.cpp.o: CMakeFiles/GAME_PROJ.dir/flags.make
+CMakeFiles/GAME_PROJ.dir/sources/binds/bind.cpp.o: ../sources/binds/bind.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/greenjoker/GAME_PROJ/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building CXX object CMakeFiles/GAME_PROJ.dir/sources/binds/bind.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/GAME_PROJ.dir/sources/binds/bind.cpp.o -c /home/greenjoker/GAME_PROJ/sources/binds/bind.cpp
+
+CMakeFiles/GAME_PROJ.dir/sources/binds/bind.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/GAME_PROJ.dir/sources/binds/bind.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/greenjoker/GAME_PROJ/sources/binds/bind.cpp > CMakeFiles/GAME_PROJ.dir/sources/binds/bind.cpp.i
+
+CMakeFiles/GAME_PROJ.dir/sources/binds/bind.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/GAME_PROJ.dir/sources/binds/bind.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/greenjoker/GAME_PROJ/sources/binds/bind.cpp -o CMakeFiles/GAME_PROJ.dir/sources/binds/bind.cpp.s
+
+CMakeFiles/GAME_PROJ.dir/sources/binds/bindMoveDown.cpp.o: CMakeFiles/GAME_PROJ.dir/flags.make
+CMakeFiles/GAME_PROJ.dir/sources/binds/bindMoveDown.cpp.o: ../sources/binds/bindMoveDown.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/greenjoker/GAME_PROJ/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building CXX object CMakeFiles/GAME_PROJ.dir/sources/binds/bindMoveDown.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/GAME_PROJ.dir/sources/binds/bindMoveDown.cpp.o -c /home/greenjoker/GAME_PROJ/sources/binds/bindMoveDown.cpp
+
+CMakeFiles/GAME_PROJ.dir/sources/binds/bindMoveDown.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/GAME_PROJ.dir/sources/binds/bindMoveDown.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/greenjoker/GAME_PROJ/sources/binds/bindMoveDown.cpp > CMakeFiles/GAME_PROJ.dir/sources/binds/bindMoveDown.cpp.i
+
+CMakeFiles/GAME_PROJ.dir/sources/binds/bindMoveDown.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/GAME_PROJ.dir/sources/binds/bindMoveDown.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/greenjoker/GAME_PROJ/sources/binds/bindMoveDown.cpp -o CMakeFiles/GAME_PROJ.dir/sources/binds/bindMoveDown.cpp.s
+
+CMakeFiles/GAME_PROJ.dir/sources/binds/bindPlayer.cpp.o: CMakeFiles/GAME_PROJ.dir/flags.make
+CMakeFiles/GAME_PROJ.dir/sources/binds/bindPlayer.cpp.o: ../sources/binds/bindPlayer.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/greenjoker/GAME_PROJ/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building CXX object CMakeFiles/GAME_PROJ.dir/sources/binds/bindPlayer.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/GAME_PROJ.dir/sources/binds/bindPlayer.cpp.o -c /home/greenjoker/GAME_PROJ/sources/binds/bindPlayer.cpp
+
+CMakeFiles/GAME_PROJ.dir/sources/binds/bindPlayer.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/GAME_PROJ.dir/sources/binds/bindPlayer.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/greenjoker/GAME_PROJ/sources/binds/bindPlayer.cpp > CMakeFiles/GAME_PROJ.dir/sources/binds/bindPlayer.cpp.i
+
+CMakeFiles/GAME_PROJ.dir/sources/binds/bindPlayer.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/GAME_PROJ.dir/sources/binds/bindPlayer.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/greenjoker/GAME_PROJ/sources/binds/bindPlayer.cpp -o CMakeFiles/GAME_PROJ.dir/sources/binds/bindPlayer.cpp.s
+
+CMakeFiles/GAME_PROJ.dir/sources/inputController.cpp.o: CMakeFiles/GAME_PROJ.dir/flags.make
+CMakeFiles/GAME_PROJ.dir/sources/inputController.cpp.o: ../sources/inputController.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/greenjoker/GAME_PROJ/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Building CXX object CMakeFiles/GAME_PROJ.dir/sources/inputController.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/GAME_PROJ.dir/sources/inputController.cpp.o -c /home/greenjoker/GAME_PROJ/sources/inputController.cpp
+
+CMakeFiles/GAME_PROJ.dir/sources/inputController.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/GAME_PROJ.dir/sources/inputController.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/greenjoker/GAME_PROJ/sources/inputController.cpp > CMakeFiles/GAME_PROJ.dir/sources/inputController.cpp.i
+
+CMakeFiles/GAME_PROJ.dir/sources/inputController.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/GAME_PROJ.dir/sources/inputController.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/greenjoker/GAME_PROJ/sources/inputController.cpp -o CMakeFiles/GAME_PROJ.dir/sources/inputController.cpp.s
+
+CMakeFiles/GAME_PROJ.dir/sources/binds/bindMoveLeft.cpp.o: CMakeFiles/GAME_PROJ.dir/flags.make
+CMakeFiles/GAME_PROJ.dir/sources/binds/bindMoveLeft.cpp.o: ../sources/binds/bindMoveLeft.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/greenjoker/GAME_PROJ/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Building CXX object CMakeFiles/GAME_PROJ.dir/sources/binds/bindMoveLeft.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/GAME_PROJ.dir/sources/binds/bindMoveLeft.cpp.o -c /home/greenjoker/GAME_PROJ/sources/binds/bindMoveLeft.cpp
+
+CMakeFiles/GAME_PROJ.dir/sources/binds/bindMoveLeft.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/GAME_PROJ.dir/sources/binds/bindMoveLeft.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/greenjoker/GAME_PROJ/sources/binds/bindMoveLeft.cpp > CMakeFiles/GAME_PROJ.dir/sources/binds/bindMoveLeft.cpp.i
+
+CMakeFiles/GAME_PROJ.dir/sources/binds/bindMoveLeft.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/GAME_PROJ.dir/sources/binds/bindMoveLeft.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/greenjoker/GAME_PROJ/sources/binds/bindMoveLeft.cpp -o CMakeFiles/GAME_PROJ.dir/sources/binds/bindMoveLeft.cpp.s
+
+CMakeFiles/GAME_PROJ.dir/sources/binds/bindMoveRight.cpp.o: CMakeFiles/GAME_PROJ.dir/flags.make
+CMakeFiles/GAME_PROJ.dir/sources/binds/bindMoveRight.cpp.o: ../sources/binds/bindMoveRight.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/greenjoker/GAME_PROJ/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Building CXX object CMakeFiles/GAME_PROJ.dir/sources/binds/bindMoveRight.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/GAME_PROJ.dir/sources/binds/bindMoveRight.cpp.o -c /home/greenjoker/GAME_PROJ/sources/binds/bindMoveRight.cpp
+
+CMakeFiles/GAME_PROJ.dir/sources/binds/bindMoveRight.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/GAME_PROJ.dir/sources/binds/bindMoveRight.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/greenjoker/GAME_PROJ/sources/binds/bindMoveRight.cpp > CMakeFiles/GAME_PROJ.dir/sources/binds/bindMoveRight.cpp.i
+
+CMakeFiles/GAME_PROJ.dir/sources/binds/bindMoveRight.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/GAME_PROJ.dir/sources/binds/bindMoveRight.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/greenjoker/GAME_PROJ/sources/binds/bindMoveRight.cpp -o CMakeFiles/GAME_PROJ.dir/sources/binds/bindMoveRight.cpp.s
+
+CMakeFiles/GAME_PROJ.dir/sources/binds/bindMoveUp.cpp.o: CMakeFiles/GAME_PROJ.dir/flags.make
+CMakeFiles/GAME_PROJ.dir/sources/binds/bindMoveUp.cpp.o: ../sources/binds/bindMoveUp.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/greenjoker/GAME_PROJ/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_26) "Building CXX object CMakeFiles/GAME_PROJ.dir/sources/binds/bindMoveUp.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/GAME_PROJ.dir/sources/binds/bindMoveUp.cpp.o -c /home/greenjoker/GAME_PROJ/sources/binds/bindMoveUp.cpp
+
+CMakeFiles/GAME_PROJ.dir/sources/binds/bindMoveUp.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/GAME_PROJ.dir/sources/binds/bindMoveUp.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/greenjoker/GAME_PROJ/sources/binds/bindMoveUp.cpp > CMakeFiles/GAME_PROJ.dir/sources/binds/bindMoveUp.cpp.i
+
+CMakeFiles/GAME_PROJ.dir/sources/binds/bindMoveUp.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/GAME_PROJ.dir/sources/binds/bindMoveUp.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/greenjoker/GAME_PROJ/sources/binds/bindMoveUp.cpp -o CMakeFiles/GAME_PROJ.dir/sources/binds/bindMoveUp.cpp.s
+
+CMakeFiles/GAME_PROJ.dir/sources/binds/bindFight.cpp.o: CMakeFiles/GAME_PROJ.dir/flags.make
+CMakeFiles/GAME_PROJ.dir/sources/binds/bindFight.cpp.o: ../sources/binds/bindFight.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/greenjoker/GAME_PROJ/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_27) "Building CXX object CMakeFiles/GAME_PROJ.dir/sources/binds/bindFight.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/GAME_PROJ.dir/sources/binds/bindFight.cpp.o -c /home/greenjoker/GAME_PROJ/sources/binds/bindFight.cpp
+
+CMakeFiles/GAME_PROJ.dir/sources/binds/bindFight.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/GAME_PROJ.dir/sources/binds/bindFight.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/greenjoker/GAME_PROJ/sources/binds/bindFight.cpp > CMakeFiles/GAME_PROJ.dir/sources/binds/bindFight.cpp.i
+
+CMakeFiles/GAME_PROJ.dir/sources/binds/bindFight.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/GAME_PROJ.dir/sources/binds/bindFight.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/greenjoker/GAME_PROJ/sources/binds/bindFight.cpp -o CMakeFiles/GAME_PROJ.dir/sources/binds/bindFight.cpp.s
+
+CMakeFiles/GAME_PROJ.dir/sources/binds/bindExit.cpp.o: CMakeFiles/GAME_PROJ.dir/flags.make
+CMakeFiles/GAME_PROJ.dir/sources/binds/bindExit.cpp.o: ../sources/binds/bindExit.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/greenjoker/GAME_PROJ/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_28) "Building CXX object CMakeFiles/GAME_PROJ.dir/sources/binds/bindExit.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/GAME_PROJ.dir/sources/binds/bindExit.cpp.o -c /home/greenjoker/GAME_PROJ/sources/binds/bindExit.cpp
+
+CMakeFiles/GAME_PROJ.dir/sources/binds/bindExit.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/GAME_PROJ.dir/sources/binds/bindExit.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/greenjoker/GAME_PROJ/sources/binds/bindExit.cpp > CMakeFiles/GAME_PROJ.dir/sources/binds/bindExit.cpp.i
+
+CMakeFiles/GAME_PROJ.dir/sources/binds/bindExit.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/GAME_PROJ.dir/sources/binds/bindExit.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/greenjoker/GAME_PROJ/sources/binds/bindExit.cpp -o CMakeFiles/GAME_PROJ.dir/sources/binds/bindExit.cpp.s
+
 # Object files for target GAME_PROJ
 GAME_PROJ_OBJECTS = \
 "CMakeFiles/GAME_PROJ.dir/sources/main.cpp.o" \
@@ -324,7 +441,16 @@ GAME_PROJ_OBJECTS = \
 "CMakeFiles/GAME_PROJ.dir/sources/ostreamWrapper.cpp.o" \
 "CMakeFiles/GAME_PROJ.dir/sources/fstreamWrapper.cpp.o" \
 "CMakeFiles/GAME_PROJ.dir/sources/logger.cpp.o" \
-"CMakeFiles/GAME_PROJ.dir/sources/enemy.cpp.o"
+"CMakeFiles/GAME_PROJ.dir/sources/enemy.cpp.o" \
+"CMakeFiles/GAME_PROJ.dir/sources/binds/bind.cpp.o" \
+"CMakeFiles/GAME_PROJ.dir/sources/binds/bindMoveDown.cpp.o" \
+"CMakeFiles/GAME_PROJ.dir/sources/binds/bindPlayer.cpp.o" \
+"CMakeFiles/GAME_PROJ.dir/sources/inputController.cpp.o" \
+"CMakeFiles/GAME_PROJ.dir/sources/binds/bindMoveLeft.cpp.o" \
+"CMakeFiles/GAME_PROJ.dir/sources/binds/bindMoveRight.cpp.o" \
+"CMakeFiles/GAME_PROJ.dir/sources/binds/bindMoveUp.cpp.o" \
+"CMakeFiles/GAME_PROJ.dir/sources/binds/bindFight.cpp.o" \
+"CMakeFiles/GAME_PROJ.dir/sources/binds/bindExit.cpp.o"
 
 # External object files for target GAME_PROJ
 GAME_PROJ_EXTERNAL_OBJECTS =
@@ -348,9 +474,18 @@ GAME_PROJ: CMakeFiles/GAME_PROJ.dir/sources/ostreamWrapper.cpp.o
 GAME_PROJ: CMakeFiles/GAME_PROJ.dir/sources/fstreamWrapper.cpp.o
 GAME_PROJ: CMakeFiles/GAME_PROJ.dir/sources/logger.cpp.o
 GAME_PROJ: CMakeFiles/GAME_PROJ.dir/sources/enemy.cpp.o
+GAME_PROJ: CMakeFiles/GAME_PROJ.dir/sources/binds/bind.cpp.o
+GAME_PROJ: CMakeFiles/GAME_PROJ.dir/sources/binds/bindMoveDown.cpp.o
+GAME_PROJ: CMakeFiles/GAME_PROJ.dir/sources/binds/bindPlayer.cpp.o
+GAME_PROJ: CMakeFiles/GAME_PROJ.dir/sources/inputController.cpp.o
+GAME_PROJ: CMakeFiles/GAME_PROJ.dir/sources/binds/bindMoveLeft.cpp.o
+GAME_PROJ: CMakeFiles/GAME_PROJ.dir/sources/binds/bindMoveRight.cpp.o
+GAME_PROJ: CMakeFiles/GAME_PROJ.dir/sources/binds/bindMoveUp.cpp.o
+GAME_PROJ: CMakeFiles/GAME_PROJ.dir/sources/binds/bindFight.cpp.o
+GAME_PROJ: CMakeFiles/GAME_PROJ.dir/sources/binds/bindExit.cpp.o
 GAME_PROJ: CMakeFiles/GAME_PROJ.dir/build.make
 GAME_PROJ: CMakeFiles/GAME_PROJ.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/greenjoker/GAME_PROJ/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Linking CXX executable GAME_PROJ"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/greenjoker/GAME_PROJ/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_29) "Linking CXX executable GAME_PROJ"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/GAME_PROJ.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

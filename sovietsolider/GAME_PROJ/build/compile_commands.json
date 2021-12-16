@@ -93,5 +93,50 @@
   "directory": "/home/greenjoker/GAME_PROJ/build",
   "command": "/usr/bin/c++    -g   -std=gnu++17 -o CMakeFiles/GAME_PROJ.dir/sources/enemy.cpp.o -c /home/greenjoker/GAME_PROJ/sources/enemy.cpp",
   "file": "/home/greenjoker/GAME_PROJ/sources/enemy.cpp"
+},
+{
+  "directory": "/home/greenjoker/GAME_PROJ/build",
+  "command": "/usr/bin/c++    -g   -std=gnu++17 -o CMakeFiles/GAME_PROJ.dir/sources/binds/bind.cpp.o -c /home/greenjoker/GAME_PROJ/sources/binds/bind.cpp",
+  "file": "/home/greenjoker/GAME_PROJ/sources/binds/bind.cpp"
+},
+{
+  "directory": "/home/greenjoker/GAME_PROJ/build",
+  "command": "/usr/bin/c++    -g   -std=gnu++17 -o CMakeFiles/GAME_PROJ.dir/sources/binds/bindMoveDown.cpp.o -c /home/greenjoker/GAME_PROJ/sources/binds/bindMoveDown.cpp",
+  "file": "/home/greenjoker/GAME_PROJ/sources/binds/bindMoveDown.cpp"
+},
+{
+  "directory": "/home/greenjoker/GAME_PROJ/build",
+  "command": "/usr/bin/c++    -g   -std=gnu++17 -o CMakeFiles/GAME_PROJ.dir/sources/binds/bindPlayer.cpp.o -c /home/greenjoker/GAME_PROJ/sources/binds/bindPlayer.cpp",
+  "file": "/home/greenjoker/GAME_PROJ/sources/binds/bindPlayer.cpp"
+},
+{
+  "directory": "/home/greenjoker/GAME_PROJ/build",
+  "command": "/usr/bin/c++    -g   -std=gnu++17 -o CMakeFiles/GAME_PROJ.dir/sources/inputController.cpp.o -c /home/greenjoker/GAME_PROJ/sources/inputController.cpp",
+  "file": "/home/greenjoker/GAME_PROJ/sources/inputController.cpp"
+},
+{
+  "directory": "/home/greenjoker/GAME_PROJ/build",
+  "command": "/usr/bin/c++    -g   -std=gnu++17 -o CMakeFiles/GAME_PROJ.dir/sources/binds/bindMoveLeft.cpp.o -c /home/greenjoker/GAME_PROJ/sources/binds/bindMoveLeft.cpp",
+  "file": "/home/greenjoker/GAME_PROJ/sources/binds/bindMoveLeft.cpp"
+},
+{
+  "directory": "/home/greenjoker/GAME_PROJ/build",
+  "command": "/usr/bin/c++    -g   -std=gnu++17 -o CMakeFiles/GAME_PROJ.dir/sources/binds/bindMoveRight.cpp.o -c /home/greenjoker/GAME_PROJ/sources/binds/bindMoveRight.cpp",
+  "file": "/home/greenjoker/GAME_PROJ/sources/binds/bindMoveRight.cpp"
+},
+{
+  "directory": "/home/greenjoker/GAME_PROJ/build",
+  "command": "/usr/bin/c++    -g   -std=gnu++17 -o CMakeFiles/GAME_PROJ.dir/sources/binds/bindMoveUp.cpp.o -c /home/greenjoker/GAME_PROJ/sources/binds/bindMoveUp.cpp",
+  "file": "/home/greenjoker/GAME_PROJ/sources/binds/bindMoveUp.cpp"
+},
+{
+  "directory": "/home/greenjoker/GAME_PROJ/build",
+  "command": "/usr/bin/c++    -g   -std=gnu++17 -o CMakeFiles/GAME_PROJ.dir/sources/binds/bindFight.cpp.o -c /home/greenjoker/GAME_PROJ/sources/binds/bindFight.cpp",
+  "file": "/home/greenjoker/GAME_PROJ/sources/binds/bindFight.cpp"
+},
+{
+  "directory": "/home/greenjoker/GAME_PROJ/build",
+  "command": "/usr/bin/c++    -g   -std=gnu++17 -o CMakeFiles/GAME_PROJ.dir/sources/binds/bindExit.cpp.o -c /home/greenjoker/GAME_PROJ/sources/binds/bindExit.cpp",
+  "file": "/home/greenjoker/GAME_PROJ/sources/binds/bindExit.cpp"
 }
 ]

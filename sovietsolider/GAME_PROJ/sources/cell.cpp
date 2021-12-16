@@ -5,6 +5,7 @@ Cell::Cell()
 	cv = new CellView('*', *this);
 }
 
+
 void Cell::set_display(char setter) { display = setter; }
 
 CellView& Cell::get_display() { return *cv; }

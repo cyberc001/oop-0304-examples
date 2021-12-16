@@ -9,7 +9,7 @@ class Cell; class Field; class Enemy;
 class Player : public CellObject
 {
 	private:
-		float health = 50, damage = 10;
+		float health = 100, damage = 10;
 		int pos_x, pos_y, range = 1;
 	public:
 		Player();

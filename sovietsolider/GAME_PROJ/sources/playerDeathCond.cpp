@@ -3,7 +3,7 @@
 template<int death_health>
 bool DeathCond<death_health>::isDone()
 {
-	return player->get_health() <= 0;
+	return player->get_health() <= death_health;
 }
 
 template<int death_health>

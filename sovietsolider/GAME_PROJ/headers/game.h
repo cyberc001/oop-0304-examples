@@ -14,14 +14,12 @@
 #include "objectDamage.h"
 #include "objectRange.h"
 #include "object.h"
+#include "inputController.h"
 
 template <typename winCondType, typename lossCondType, int difficulty>
 class Game
 {
 	public:
-		winCondType winCond;
-		lossCondType lossCond;
-		
 		void onStart();
 		void Update();
 		void clear_terminal_icanon();
@@ -38,11 +36,17 @@ class Game
 
 		winCondType& get_winCond();
 		lossCondType& get_lossCond();
+		~Game();
 
 	private:
 		std::vector<Enemy*> enemy_container;
 		std::vector<Object*> objects_container;
+		InputController* input_controller;
+		
 
+		winCondType winCond;
+		lossCondType lossCond;
+		
 		Field* field;
 		Player player;
 
